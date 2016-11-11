@@ -23,10 +23,12 @@ header nav {
   width: 100vw;
 
   background-color: #3FC380;
+
+  z-index: 100;
 }
 
 header section.carosel {
-  background-image: url(/img/header.jpg);
+  background-image: url(../img/header.jpg);
   height: 100%;
   background-size: cover;
 }
@@ -82,3 +84,7 @@ header#timeline .date p.wrapper {
 /**
  * Section III: Refugees in the Democratic Republic of Congo
  **/
+section#drc figcaption {
+  text-align: center;
+  width: 100%;
+}
