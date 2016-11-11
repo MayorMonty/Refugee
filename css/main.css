@@ -23,6 +23,9 @@ header nav {
   width: 100vw;
 
   background-color: #3FC380;
+
+
+  z-index: 100;
 }
 
 header section.carosel {
@@ -71,13 +74,47 @@ h4::after {
 /**
  * Section II: Timeline
  **/
-header#timeline {
+section#timeline {
   margin: 0 auto;
-}
-header#timeline .date p.wrapper {
-  background: #000;
+
 }
 
+
+/** <TIMELINE TRICKERY> **/
+section#timeline .date h5::before {
+  content: "";
+
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: inline-flex;
+
+  background: #3FC380;
+
+
+  position: relative;
+  top: 20px;
+
+  /** Multiplied by 2 **/
+  margin-right: 48px;
+}
+
+section#timeline span.line {
+  height: 100%;
+  width: 6px;
+
+  background: #000;
+
+
+}
+
+/** </TIMELINE TRICKERY> **/
+
+
+section#timeline .date p {
+
+  margin-left: 96px;
+}
 
 /**
  * Section III: Refugees in the Democratic Republic of Congo
