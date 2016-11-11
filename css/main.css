@@ -1,0 +1,84 @@
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+
+}
+
+/**
+ * Header
+ **/
+header {
+  height: 60vh;
+  margin-bottom: 32px
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100vw;
+
+  background-color: #3FC380;
+}
+
+header section.carosel {
+  background-image: url(/img/header.jpg);
+  height: 100%;
+  background-size: cover;
+}
+
+i.fa.nav {
+  color: white;
+  font-size: 200%;
+  margin: 16px;
+}
+
+
+/**
+ * General & Section I
+ **/
+main {
+  margin: 12px
+}
+
+main section {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+
+}
+
+
+h4 {
+  color: #1a1a1a;
+
+}
+h4::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 6px;
+  background: #3FC380;
+}
+
+
+
+
+/**
+ * Section II: Timeline
+ **/
+header#timeline {
+  margin: 0 auto;
+}
+header#timeline .date p.wrapper {
+  background: #000;
+}
+
+
+/**
+ * Section III: Refugees in the Democratic Republic of Congo
+ **/
