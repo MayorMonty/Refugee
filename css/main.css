@@ -24,6 +24,10 @@ header nav {
 
   background-color: #3FC380;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9a23fc3e48d06a725410a4b5688e63e20202ef51
   z-index: 100;
 }
 
@@ -134,6 +138,7 @@ section#drc figcaption {
 /**
  * Section IV: How you can help
  **/
+<<<<<<< HEAD
 section#help .items {
   margin: 0 auto;
   display: flex;
@@ -148,8 +153,49 @@ section#help figure {
 
 section#help figcaption {
   text-align: center;
+=======
+section#timeline {
+  margin: 0 auto;
+
 }
 
+
+/** <TIMELINE TRICKERY> **/
+section#timeline .date h5::before {
+  content: "";
+
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: inline-flex;
+
+  background: #3FC380;
+
+
+  position: relative;
+  top: 20px;
+
+  /** Multiplied by 2 **/
+  margin-right: 48px;
+}
+
+section#timeline span.line {
+  height: 100%;
+  width: 6px;
+
+  background: #000;
+
+
+>>>>>>> 9a23fc3e48d06a725410a4b5688e63e20202ef51
+}
+
+/** </TIMELINE TRICKERY> **/
+
+
+section#timeline .date p {
+
+  margin-left: 96px;
+}
 
 
 
