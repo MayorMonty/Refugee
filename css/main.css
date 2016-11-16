@@ -69,22 +69,109 @@ h4::after {
 
 
 
-
 /**
- * Section II: Timeline
- **/
-header#timeline {
-  margin: 0 auto;
+* Section II: Timeline
+**/
+section#timeline {
+ margin: 0 auto;
 }
-header#timeline .date p.wrapper {
-  background: #000;
+
+section#timeline .date h5 {
+  margin-left: 36px;
 }
+
+/** <TIMELINE TRICKERY> **/
+section#timeline .date h5:before {
+  content: "";
+
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+
+  top: 20px;
+  left: -48px;
+
+
+  background: #3FC380;
+
+ }
+
+section#timeline span.line {
+ height: 100%;
+ width: 6px;
+
+ background: #000;
+
+
+}
+
+ /** </TIMELINE TRICKERY> **/
+
+
+ section#timeline .date p {
+
+   margin-left: 96px;
+ }
 
 
 /**
  * Section III: Refugees in the Democratic Republic of Congo
  **/
+figure {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 section#drc figcaption {
   text-align: center;
   width: 100%;
+}
+
+
+
+/**
+ * Section IV: How you can help
+ **/
+section#help .items {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section#help figure {
+  width: 400px;
+}
+
+
+section#help figcaption {
+  text-align: center;
+}
+
+
+
+
+/**
+ * Footer
+ **/
+
+footer {
+  padding: 64px;
+  background: #3FC380;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+footer img {
+  max-width: 400px;
+}
+
+footer a {
+  color: #FFF;
 }
