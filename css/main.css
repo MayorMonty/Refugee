@@ -23,11 +23,6 @@ header nav {
   width: 100vw;
 
   background-color: #3FC380;
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 9a23fc3e48d06a725410a4b5688e63e20202ef51
   z-index: 100;
 }
 
@@ -185,8 +180,6 @@ section#timeline span.line {
 
   background: #000;
 
-
->>>>>>> 9a23fc3e48d06a725410a4b5688e63e20202ef51
 }
 
 /** </TIMELINE TRICKERY> **/
