@@ -24,6 +24,40 @@ header nav {
 
   background-color: #3FC380;
   z-index: 100;
+
+  display: flex;
+  align-items: center;
+}
+
+header nav.md {
+  display: none;
+
+}
+
+header nav.md ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 0;
+}
+
+header nav.md ul li {
+  list-style: none;
+  display: inline;
+
+}
+header nav.md ul li a {
+  color: #FFF;
+}
+
+@media (min-width: 550px) {
+  header nav.md {
+    display: flex;
+  }
+  header nav.sm {
+    display: none;
+  }
 }
 
 header section.carosel {
@@ -32,12 +66,33 @@ header section.carosel {
   background-size: cover;
 }
 
-i.fa.nav {
-  color: white;
-  font-size: 200%;
-  margin: 16px;
+span.burger {
+  height: 34px;
 }
 
+span.burger span.bar {
+  width: 42px;
+  height: 6px;
+
+  margin-left: 16px;
+
+  background: #FFF;
+
+  position: relative;
+  display: block;
+}
+
+span.burger span.bar:nth-child(1) {
+
+}
+
+span.burger span.bar:nth-child(2) {
+  top: 8px;
+}
+
+span.burger span.bar:nth-child(3) {
+  top: 16px;
+}
 
 /**
  * General & Section I
@@ -72,15 +127,22 @@ h4::after {
 * Section II: Timeline
 **/
 section#timeline {
- margin: 0 auto;
+ margin: 4rem auto;
+
 }
 
 section#timeline .date h5 {
-  margin-left: 36px;
+  margin-left: 96px;
+  font-weight: bold;
 }
 
+@media (min-width: 550px) {
+  section#timeline .date h5 {
+    font-weight: normal;
+  }
+}
 /** <TIMELINE TRICKERY> **/
-section#timeline .date h5:before {
+section#timeline .date span.pin {
   content: "";
 
   width: 60px;
@@ -89,8 +151,7 @@ section#timeline .date h5:before {
   display: inline-block;
   position: relative;
 
-  top: 20px;
-  left: -48px;
+  top: 50px;
 
 
   background: #3FC380;
@@ -133,61 +194,24 @@ section#drc figcaption {
 /**
  * Section IV: How you can help
  **/
-<<<<<<< HEAD
 section#help .items {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
 }
 
 section#help figure {
-  width: 400px;
+  max-width: 200px;
 }
 
+section#help figure img {
+  width: 100%;
+}
 
 section#help figcaption {
   text-align: center;
-=======
-section#timeline {
-  margin: 0 auto;
 
-}
-
-
-/** <TIMELINE TRICKERY> **/
-section#timeline .date h5::before {
-  content: "";
-
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  display: inline-flex;
-
-  background: #3FC380;
-
-
-  position: relative;
-  top: 20px;
-
-  /** Multiplied by 2 **/
-  margin-right: 48px;
-}
-
-section#timeline span.line {
-  height: 100%;
-  width: 6px;
-
-  background: #000;
-
-}
-
-/** </TIMELINE TRICKERY> **/
-
-
-section#timeline .date p {
-
-  margin-left: 96px;
 }
 
 
