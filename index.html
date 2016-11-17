@@ -5,7 +5,17 @@
     <title>Refugees</title>
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
 
+        $("span.burger").click(function() {
+            $("span.burger").toggleClass("clicked")
+        });
+
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -15,6 +25,7 @@
           <span class="bar"></span>
           <span class="bar"></span>
         </span>
+
       </nav>
       <nav class="md">
         <ul>
@@ -25,7 +36,10 @@
         </ul>
       </nav>
       <section class="carosel">
-
+        <figure class="slide"></figure>
+        <figure class="slide"></figure>
+        <figure class="slide"></figure>
+        <figure class="slide"></figure>
       </section>
     </header>
     <main>
@@ -45,7 +59,7 @@
         </div>
         <div class="date">
           <span class="pin"></span><h5 class="range">800 A.D. - 1300 A.D.</h5>
-          <p>n the Abbasid empire, Christians and Jews had to pay a tax to ensure their protection. Those of neither religion, or those not wanting to pay the tax, were often displaced and forced to move by the government.</p>
+          <p>In the Abbasid empire, Christians and Jews had to pay a tax to ensure their protection. Those of neither religion, or those not wanting to pay the tax, were often displaced and forced to move by the government.</p>
         </div>
         <div class="date">
           <span class="pin"></span><h5 class="range">1300 A.D. - 1800 A.D.</h5>
@@ -119,5 +133,7 @@
 
       <p>Your webmaster is <a href="mailto:bmcgui7575@greenvilleschools.sc.us">Brendan McGuire</a>, please contact if any issues arise</p>
     </footer>
+
+
   </body>
 </html>

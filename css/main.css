@@ -31,7 +31,7 @@ header nav {
 
 header nav.md {
   display: none;
-
+  transition: 0.5s top, 0.5s left;
 }
 
 header nav.md ul {
@@ -46,12 +46,14 @@ header nav.md ul li {
   list-style: none;
   display: inline;
 
+
+
 }
 header nav.md ul li a {
   color: #FFF;
 }
 
-@media (min-width: 550px) {
+@media screen and (min-width: 960px) {
   header nav.md {
     display: flex;
   }
@@ -60,10 +62,37 @@ header nav.md ul li a {
   }
 }
 
+header nav.sm span {
+  top: 0;
+  left: 0;
+  transition: 0.3s all;
+}
+
+
+header nav.sm span.clicked span:nth-child(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+
+header nav.sm span.clicked span:nth-child(2) {
+  left: -60px;
+}
+
+header nav.sm span.clicked span:nth-child(3) {
+  top: 2px;
+  transform: rotate(-45deg);
+}
+
 header section.carosel {
   background-image: url(../img/header.jpg);
   height: 100%;
   background-size: cover;
+}
+
+@media (max-width: 960px) {
+  header {
+    height: 100vh;
+  }
 }
 
 span.burger {
