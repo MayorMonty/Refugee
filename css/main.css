@@ -61,7 +61,7 @@ header nav.md ul li a {
 
 @media screen and (min-width: 960px) {
   header nav.md {
-    display: block;
+    display: flex;
   }
   header nav.sm {
     display: none;
