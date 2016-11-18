@@ -11,9 +11,17 @@
       $(document).ready(function() {
 
         $("span.burger").click(function() {
-            $("span.burger").toggleClass("clicked")
+            $("nav.sm").toggleClass("clicked")
         });
 
+      });
+
+      $(window).scroll(function() {
+        $("div.progress").css("width",
+
+          // PERCENTAGE                                                           * WIDTH
+          (($(window).scrollTop() + $(window).height()) / $(document).height()) * $(document).width()
+        )
       });
     </script>
   </head>
@@ -25,9 +33,17 @@
           <span class="bar"></span>
           <span class="bar"></span>
         </span>
-
+        <section class="fullscreen">
+          <ul>
+            <li><a href="#about">What is a Refugee?</a></li>
+            <li><a href="#timeline">History of Refugees</a></li>
+            <li><a href="#drc">Refugees in the Democratic Republic of Congo</a></li>
+            <li><a href="#help">How you can help</a></li>
+          </ul>
+        </section>
       </nav>
       <nav class="md">
+        <div class="progress"></div>
         <ul>
           <li><a href="#about">What is a Refugee?</a></li>
           <li><a href="#timeline">History of Refugees</a></li>
@@ -97,7 +113,7 @@
       </section>
       <section id="drc">
         <h4 class="row">Refugees in the Democratic Republic of the Congo</h4>
-        <p class="row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ab, earum in facere culpa fugit cum cupiditate animi, aspernatur minus quod quia ea explicabo nihil sint magni debitis, nesciunt illum?</p>
+        <p class="row">The Democratic Republic of Congo (DRC) gained independence from Belgium on June 30, 1960. It has a population of 81,331,050. It’s government is a Semi-Presidential Republic and their economy is centered on raw materials and natural resources. The main religion is Roman Catholic/Christianity. It has been involved in may major wars including the 1st and 2nd Congo War.</p>
           <figure class="four columns">
             <img src="img/drc.jpg" alt="Democratic Republic of the Congo by jordancreative">
             <figcaption>
@@ -108,16 +124,17 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos enim blanditiis necessitatibus, beatae, minima mollitia aperiam deleniti qui. Magnam illum itaque culpa blanditiis, excepturi delectus, tempore ex nihil. Vero, sunt.</p>
         <div>
           <h5>The War and Refugees</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quam suscipit, expedita consequatur odio optio impedit ipsum voluptatibus iusto quas praesentium illum eum in cumque repellat amet adipisci laudantium, earum!</p>
+          <p>After the 1994 Rwandan Genocide, Rwanda invaded The DRC in 1996. Mobutu Sese Seko was overthrown and Laurent Desire Kabila took over. This became known as the First Congo War. The Second Congo war started soon after the first. Rwandan and Ugandan forces invaded the Democratic Republic of Congo (DRC) and the war began. Laurent Kabila was assassinated and his son Joseph came to power. These conflicts displaced over 2 million people and killed many more. These refugees had to flee to neighboring countries to try and escape their war torn country. Joseph Kabila established peace but there are still lasting effects from these wars.</p>
         </div>
         <div>
           <h5>Foreign Aid</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quam suscipit, expedita consequatur odio optio impedit ipsum voluptatibus iusto quas praesentium illum eum in cumque repellat amet adipisci laudantium, earum!</p>
+          <p>Theses conflicts were horrible but thankfully many countries and organizations helped out. The UN issued Mission MONUSCO to help. The U.S.A. and United Kingdom were major financial helpers in this conflict. Angola also played its part in supporting the DRC.</p>
         </div>
         <div>
           <h5>Impact</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non minus nobis, vitae recusandae dolorem corrupti ipsa, fugit unde suscipit odit ratione, voluptatum ducimus autem quis quod atque modi error. Maiores.</p>
+
         </div>
+
       </section>
       <section id="help">
         <h4>How you can help</h4>
@@ -125,11 +142,11 @@
         <div class="items">
               <figure>
                 <img src="img/charity/unhcr.jpg" alt="United Nations High Council on Refugees">
-                <figcaption><a href="http://www.unhcr.org/en-us/democratic-republic-of-the-congo.html">United Nations High Council on Refugees</a><p>+41 22 739 8111</p></figcaption>
+                <figcaption><a href="http://www.unhcr.org/en-us/democratic-republic-of-the-congo.html">United Nations High Council on Refugees</a><p>Phone: +41 22 739 8111</p></figcaption>
               </figure>
               <figure>
                 <img src="img/charity/wc.png" alt="War Child">
-                <figcaption><a href="http://www.warchild.org.uk/what-we-do/democratic-republic-of-congo ">War Child</a><p>Phone: +1 (212) 551 3000</p></figcaption>
+                <figcaption><a href="http://www.warchild.org.uk/what-we-do/democratic-republic-of-congo ">War Child</a><p>Phone: +1 (212) 551-3000</p></figcaption>
               </figure>
               <figure>
                 <img src="img/charity/irc.png" alt="International Rescue Commitee">
@@ -137,15 +154,15 @@
               </figure>
               <figure>
                 <img src="img/charity/care.jpg" alt="CARE International">
-                <figcaption><a href="http://www.care.org/country/democratic-republic-congo">CARE International</a><p>Phone: 1-800-521-CARE</p></figcaption>
+                <figcaption><a href="http://www.care.org/country/democratic-republic-congo">CARE International</a><p>Phone: +1 (800) 521-CARE</p></figcaption>
               </figure>
               <figure>
                 <img src="img/charity/dwb.png" alt="Medecins Sans Frontieres (Doctors Without Borders)">
-                <figcaption><a href="http://www.doctorswithoutborders.org/country-region/democratic-republic-congo">Medecins Sans Frontieres (Doctors Without Borders)</a><p>+41 22 739 8111</p></figcaption>
+                <figcaption><a href="http://www.doctorswithoutborders.org/country-region/democratic-republic-congo">Medecins Sans Frontieres (Doctors Without Borders)</a><p>Phone: +1 (212) 679-6800</p></figcaption>
               </figure>
               <figure>
                 <img src="img/charity/oxfam.png" alt="OXFAM International">
-                <figcaption><a href="https://www.oxfam.org/en/countries/democratic-republic-congo">OXFAM International</a><p>+44 1865 780 100</p></figcaption>
+                <figcaption><a href="https://www.oxfam.org/en/countries/democratic-republic-congo">OXFAM International</a><p>Phone: +44 1865 780 100</p></figcaption>
               </figure>
         </div>
 

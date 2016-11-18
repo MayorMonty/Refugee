@@ -69,22 +69,23 @@ header nav.sm span {
 }
 
 
-header nav.sm span.clicked span:nth-child(1) {
+header nav.sm.clicked span span:nth-child(1) {
   top: 14px;
   transform: rotate(45deg);
 }
 
-header nav.sm span.clicked span:nth-child(2) {
+header nav.sm.clicked span span:nth-child(2) {
   left: -60px;
 }
 
-header nav.sm span.clicked span:nth-child(3) {
+header nav.sm.clicked span span:nth-child(3) {
   top: 2px;
   transform: rotate(-45deg);
 }
 
 header section.carosel {
   background-image: url(../img/header.jpg);
+  background-attachment: fixed;
   height: 100%;
   background-size: cover;
 }
@@ -122,6 +123,55 @@ span.burger span.bar:nth-child(2) {
 span.burger span.bar:nth-child(3) {
   top: 16px;
 }
+
+
+/** The popdown UI **/
+nav.sm section.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  background: #3FC380;
+  transition: 0.4s top;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav.sm section.fullscreen li {
+  list-style: none;
+  text-align: center;
+}
+nav.sm section.fullscreen a {
+  color: #FFF;
+  font-size: 130%;
+
+}
+
+nav.sm.clicked section.fullscreen {
+  top: 0;
+
+}
+
+
+
+
+/** Progress Bar**/
+nav.md .progress {
+  height: 6px;
+  width: 0px;
+  background: rgba(0,0,0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 54px;
+}
+
+
+
+
+
 
 /**
  * General & Section I
