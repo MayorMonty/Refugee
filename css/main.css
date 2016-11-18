@@ -94,12 +94,24 @@ header nav.sm.clicked span span:nth-child(3) {
   transform: rotate(-45deg);
 }
 
-header section.carosel {
+header section.hero {
   background-image: url(../img/header.jpg);
   background-attachment: fixed;
   height: 100%;
 
   background-position: 50% 0, center;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header section.hero .title {
+  background: rgba(0,0,0,0.6);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 @media (max-width: 960px) {
