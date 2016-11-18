@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width">
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://use.fontawesome.com/ea97eaf452.js"></script>
     <script>
       $(document).ready(function() {
 
         $("span.burger").click(function() {
             $("nav.sm").toggleClass("clicked")
         });
-
+        $("nav.sm a").click(function () {
+          $("nav.sm").removeClass("clicked")
+        });
       });
 
       $(window).scroll(function() {
@@ -61,7 +64,7 @@
     <main>
       <section id="about">
         <h4>What is a refugee?</h4>
-        <p>A refugee is any person who has been forced to leave their home. This could be due to War, violence, oppressive government, persecution, or natural disaster. Most countries in the UN accept refugees into their borders and provide humanitarian aid. However, often refugee camps are set up in neighboring countries to provide convenient aid.
+        <p>A refugee is any person who has been forced to leave their home. This could be due to War, violence, oppressive government, persecution, or natural disaster. Most countries in the UN accept refugees into their borders and provide humanitarian aid. However, often refugee camps are set up in neighboring countries to provide convenient aid. However, these camps are not popular with refugees, who often seek to be elsewhere.
         <h5>The Refugee Process</h5>
         <ol>
           <li>A traumatic event occurs in your country of origin. This could be a war, an oppressive dictator, a natural disaster. These events casuse the refugee-to-be to leave their home, and attempt to find a new country</li>
@@ -120,8 +123,6 @@
               <a href="https://www.flickr.com/photos/jordancreative/5190973248">Democratic Republic of the Congo by jordancreative</a>
             </figcaption>
           </figure>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos enim blanditiis necessitatibus, beatae, minima mollitia aperiam deleniti qui. Magnam illum itaque culpa blanditiis, excepturi delectus, tempore ex nihil. Vero, sunt.</p>
         <div>
           <h5>The War and Refugees</h5>
           <p>After the 1994 Rwandan Genocide, Rwanda invaded The DRC in 1996. Mobutu Sese Seko was overthrown and Laurent Desire Kabila took over. This became known as the First Congo War. The Second Congo war started soon after the first. Rwandan and Ugandan forces invaded the Democratic Republic of Congo (DRC) and the war began. Laurent Kabila was assassinated and his son Joseph came to power. These conflicts displaced over 2 million people and killed many more. These refugees had to flee to neighboring countries to try and escape their war torn country. Joseph Kabila established peace but there are still lasting effects from these wars.</p>
@@ -132,7 +133,10 @@
         </div>
         <div>
           <h5>Impact</h5>
-
+          <div class="items">
+            <section class="card" data-stat="Deaths">5.4 million<i class="fa fa-users" aria-hidden="true"></i></section>
+            <section class="card" data-stat="Refugees">2 million<i class="fa fa-id-card" aria-hidden="true"></i></section>
+          </div>
         </div>
 
       </section>
