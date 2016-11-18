@@ -1,0 +1,60 @@
+
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #3FC380;
+  height: 60px;
+
+
+  display: flex;
+  align-items: center;
+
+  z-index: 100;
+}
+nav p {
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: flex;
+  align-items: center;
+}
+i.back {
+  font-size: 250%;
+  color: #FFF;
+  margin: 12px;
+}
+
+div.cell {
+  background-size: cover;
+}
+
+div#congo1, div#congo2, div#rwanda {
+  margin: 15px;
+}
+
+
+main {
+  margin: 120px auto;
+
+}
+main p {
+  text-align: center;
+}
+
+main h5 {
+  margin-left: 8px;
+}

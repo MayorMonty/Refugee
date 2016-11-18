@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Refugees</title>
+    <title>Leaving Home</title>
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="https://use.fontawesome.com/ea97eaf452.js"></script>
     <script>
+
       $(document).ready(function() {
 
         $("span.burger").click(function() {
@@ -20,6 +21,7 @@
       });
 
       $(window).scroll(function() {
+        sessionStorage.top = $(window).scrollTop();
         $("div.progress").css("width",
 
           // PERCENTAGE                                                           * WIDTH
@@ -124,6 +126,9 @@
             </figcaption>
           </figure>
         <div>
+          <h5>The Rwandan Genocide</h5>
+        </div>
+        <div>
           <h5>The War and Refugees</h5>
           <p>After the 1994 Rwandan Genocide, Rwanda invaded The DRC in 1996. Mobutu Sese Seko was overthrown and Laurent Desire Kabila took over. This became known as the First Congo War. The Second Congo war started soon after the first. Rwandan and Ugandan forces invaded the Democratic Republic of Congo (DRC) and the war began. Laurent Kabila was assassinated and his son Joseph came to power. These conflicts displaced over 2 million people and killed many more. These refugees had to flee to neighboring countries to try and escape their war torn country. Joseph Kabila established peace but there are still lasting effects from these wars.</p>
         </div>
@@ -133,7 +138,11 @@
         </div>
         <div>
           <h5>Impact</h5>
+          <p>
+            View the impact gallery <a href="/gallery.html">here</a>
+          </p>
           <div class="items">
+
             <section class="card" data-stat="Deaths">5.4 million<i class="fa fa-users" aria-hidden="true"></i></section>
             <section class="card" data-stat="Refugees">2 million<i class="fa fa-id-card" aria-hidden="true"></i></section>
           </div>
@@ -197,6 +206,10 @@
       <p>Your webmaster is <a href="mailto:bmcgui7575@greenvilleschools.sc.us">Brendan McGuire</a>, please contact if any issues arise</p>
     </footer>
 
-
+    <script type="text/javascript">
+      if (sessionStorage.top) {
+        $(window).scrollTop(sessionStorage.top);
+      }
+    </script>
   </body>
 </html>
