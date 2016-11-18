@@ -36,19 +36,8 @@ $(window).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 function loadImages(id, href) {
-  var temp = `<a href='{href}'><div class='cell' style='width:{width}px; height: {height}px; background-image: url(/img/gallery/${id}-{index}.jpg)'></div></a>`;
+  var temp = `<a href='{href}'><div class='cell' style='width:{width}px; height: {height}px; background-image: url(../img/gallery/${id}-{index}.jpg)'></div></a>`;
   var w = 1, html = '', limitItem = href.length;
   for (var i = 0; i < limitItem; i++) {
     w = 200 +  200 * Math.random() << 0;
