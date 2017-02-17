@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="https://use.fontawesome.com/ea97eaf452.js"></script>
     <script>
 
       $(document).ready(function() {
@@ -204,11 +202,16 @@
 
       <p>Your webmaster is <a href="mailto:bmcgui7575@greenvilleschools.sc.us">Brendan McGuire</a>, please contact if any issues arise</p>
     </footer>
-
+    <script defer src="js/jquery-3.1.1.min.js"></script>
+    <script defer src="https://use.fontawesome.com/ea97eaf452.js"></script>
     <script type="text/javascript">
-      if (sessionStorage.top) {
-        $(window).scrollTop(sessionStorage.top);
-      }
+      $(document).ready(function() {
+        // If we have scroll history, restore it
+        if (sessionStorage.top) {
+          $(window).scrollTop(sessionStorage.top);
+        }
+      });
     </script>
+    
   </body>
 </html>
