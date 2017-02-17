@@ -6,27 +6,7 @@
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width">
-    <script>
-
-      $(document).ready(function() {
-
-        $("span.burger").click(function() {
-            $("nav.sm").toggleClass("clicked")
-        });
-        $("nav.sm a").click(function () {
-          $("nav.sm").removeClass("clicked")
-        });
-      });
-
-      $(window).scroll(function() {
-        sessionStorage.top = $(window).scrollTop();
-        $("div.progress").css("width",
-
-          // PERCENTAGE                                                           * WIDTH
-          (($(window).scrollTop() + $(window).height()) / $(document).height()) * $(document).width()
-        )
-      });
-    </script>
+    <script defer src="https://use.fontawesome.com/ea97eaf452.js"></script>
   </head>
   <body>
     <header>
@@ -202,8 +182,28 @@
 
       <p>Your webmaster is <a href="mailto:bmcgui7575@greenvilleschools.sc.us">Brendan McGuire</a>, please contact if any issues arise</p>
     </footer>
-    <script defer src="js/jquery-3.1.1.min.js"></script>
-    <script defer src="https://use.fontawesome.com/ea97eaf452.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+
+      $(document).ready(function() {
+
+        $("span.burger").click(function() {
+            $("nav.sm").toggleClass("clicked")
+        });
+        $("nav.sm a").click(function () {
+          $("nav.sm").removeClass("clicked")
+        });
+      });
+
+      $(window).scroll(function() {
+        sessionStorage.top = $(window).scrollTop();
+        $("div.progress").css("width",
+
+          // PERCENTAGE                                                           * WIDTH
+          (($(window).scrollTop() + $(window).height()) / $(document).height()) * $(document).width()
+        )
+      });
+    </script>
     <script type="text/javascript">
       $(document).ready(function() {
         // If we have scroll history, restore it
